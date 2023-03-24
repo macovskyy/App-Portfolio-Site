@@ -1,0 +1,141 @@
+// main: 'style.less'
+@import 'command.less';
+
+.review {
+    background-color: #F2F2F2;
+}
+
+.reviewsContent {
+    padding-top: 100px;
+    height: 100%;
+
+    p {
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    h1 {
+        max-width: 495px;
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 14px;
+    }
+
+    .underH1 {
+        text-align: center;
+        max-width: 578px;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 41px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+}
+
+.reviewsCard {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+
+    @media screen and (max-width: 991px) {
+        flex-wrap: wrap;
+        justify-content: unset;
+    }
+}
+
+.reviewsCardItem {
+    width: 379px;
+    height: 224px;
+    border-radius: 20px;
+    background-color: @primary-color;
+    font-size: 16px;
+    line-height: 24px;
+    transition: .25s;
+
+    @media screen and (max-width: 1235px) {
+        width: 32%;
+    }
+
+    @media screen and (max-width: 1199px) {
+        width: 32%;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    @media screen and (max-width: 991px) {
+        width: 100%;
+        margin-bottom: 15px;
+        font-size: 16px;
+        
+        br {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 380px) {
+        margin-top: 5px;
+    }
+
+    .reviewsCardItemText {
+        padding-left: 30px;
+        padding-top: 40px;
+
+        @media screen and (max-width: 991px) {
+            width: 90%;
+        }
+    }
+
+    .reviewUser {
+        display: flex;
+        padding-left: 30px;
+        align-items: center;
+        margin-top: 22px;
+
+        @media screen and (max-width: 991px) {
+            margin-top: 35px;
+        }
+
+        @media screen and (max-width: 575px) {
+            margin-top: 25px;
+        }
+
+        @media screen and (max-width: 380px) {
+            margin-top: 5px;
+        }
+
+        .userName {
+            margin-left: 10px;
+            line-height: 20px;
+
+            @media screen and (max-width: 991px) {
+                br {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .thirdUser {
+        margin-top: 46px;
+
+        @media screen and (max-width: 991px) {
+            margin-top: 35px;
+        }
+    }
+}
+
+.reviewsCardItem:hover {
+    transform: scale(1.05);
+}

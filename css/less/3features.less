@@ -1,0 +1,296 @@
+// main: 'style.less'
+@import 'command.less';
+
+.features {
+    position: relative;
+    top: 155px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: @secondary-color;
+    color: @primary-color;
+
+    @media screen and (max-width:1199px) {
+        top: 65px;
+    }
+
+    @media screen and (max-width:991px) {
+        top: 65px;
+    }
+}
+
+.featuresContent {
+    padding-top: 100px;
+    padding-bottom: 84px;
+
+    p {
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-align: center;
+
+        @media screen and (max-width: 575px) {
+            font-size: 12px;
+        }
+    }
+
+    h1 {
+        max-width: 495px;
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 45px;
+
+        @media screen and (max-width: 575px) {
+            font-size: 28px;
+            line-height: 30px;
+        }
+    }
+}
+
+.featuresCardGallery {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    .card {
+        position: relative;
+        width: 379px;
+        height: 490px;
+        border-radius: 20px;
+        background-color: @primary-color;
+        margin-bottom: 16px;
+        transition: .25s;
+
+        
+
+        @media screen and (max-width: 1235px) {
+            width: 32%;
+        }
+        
+        @media screen and (max-width: 1199px) {
+            width: 32%;
+        }
+
+        @media screen and (max-width:991px) {
+            width: 32%;
+            height: 417px;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 32%;
+        }
+
+        @media screen and (max-width: 575px) {
+            height: 250px;
+        }
+
+        .backCard {
+            position: absolute;
+            left: 20.06%;
+            width: 59.89%;
+            top: 8.165%;
+
+            @media screen and (max-width: 767px) {
+                width: 80%;
+                left: 10%;
+            }
+
+            @media screen and (max-width: 575px) {
+                display: none;
+            }
+
+            
+        }
+
+        .underCard {
+            position: relative;
+            background-color: @primary-color;
+            height: 197px;
+            width: 379px;
+            left: 0;
+            right: 0;
+            top: 293px;
+            border-radius: 0 0 20px 20px;
+            background-color: #F2F2F2;
+            width: 100%;
+
+            @media screen and (max-width: 1235px) {
+                width: 100%;
+            }    
+
+            @media screen and (max-width: 1199px) {
+                width: 100%;
+            }
+
+            @media screen and (max-width: 991px) {
+                top: 220px;
+            }
+
+            @media screen and (max-width: 575px) {
+                top: 50px;
+            }
+
+            @media screen and (max-width: 380px) {
+                top: 50px;
+            }
+        }
+
+        .logoCard {
+            margin-top: -32px;
+            margin-bottom: 18px;
+            margin-left: 41.42%;
+
+        @media screen and (max-width: 991px) {
+            margin-top: -32px;
+            margin-bottom: 18px;
+            margin-left: 83px;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-top: -32px;
+            margin-bottom: 18px;
+            margin-left: 49.5px;
+        }
+
+        @media screen and (max-width: 575px) {
+            margin-top: -32px;
+            margin-bottom: 18px;
+            margin-left: 20px;
+        }
+
+        @media screen and (max-width: 380px) {
+            margin-top: -32px;
+            margin-bottom: 18px;
+            margin-left: 11.5px;
+         }
+            
+        }
+        .titleCard {
+            color: @blue;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 11px;
+
+            @media screen and (max-width: 991px) {
+                font-size: 22px;
+            }
+
+            @media screen and (max-width: 767px) {
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+
+            @media screen and (max-width: 575px) {
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 380px) {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+
+        .descripCard {
+            margin-left: auto;
+            margin-right: auto;
+            color: @secondary-color;
+            max-width: 286px;
+            font-size: 15px;
+            line-height: 22.4px;
+            text-align: center;
+            text-transform: unset;
+            letter-spacing: normal;
+
+            @media screen and (max-width: 991px) {
+                font-size: 13px;
+                max-width: 90%;
+            }
+
+            @media screen and (max-width: 767px) {
+                font-size: 10px;
+            }
+
+            @media screen and (max-width: 575px) {
+                font-size: 10px;
+                line-height: 12px;
+            }
+
+            @media screen and (max-width: 480px) {
+                font-size: 8px;
+                line-height: 10px;
+            }
+        }
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+}
+
+.characteristics {
+    position: relative;
+    margin-top: 8.1%;
+    width: 100%;
+    height: 316px;
+    background-color: @accent-color;
+
+    @media screen and (max-width: 1199px) {
+        margin-top: 5.5%;
+    }
+
+    @media screen and (max-width: 991px) {
+        margin-top: 6.6%;
+    }
+
+    @media screen and (max-width: 575px) {
+        height: 200px;
+    }
+}
+
+.charContent{
+    display: flex;
+    justify-content: space-between;
+    color: @primary-color;
+}
+
+.columnChar {
+    width: 31%;
+
+    h1 {
+        font-size: 96px;
+        line-height: 96px;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 767px) {
+            font-size: 68px;
+            line-height: 84px;
+        }
+
+        @media screen and (max-width: 575px) {
+            font-size: 38px;
+            line-height: 40px;
+            margin-bottom: 10px;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 575px) {
+            margin-bottom: 0;
+        }
+    }
+}

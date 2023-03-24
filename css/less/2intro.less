@@ -1,0 +1,63 @@
+// main: 'style.less'
+@import 'command.less';
+
+.introContent {
+    display: flex;
+    margin-top: 100px;
+
+    @media screen and (max-width: 991) {
+        margin-top: 0;
+    }
+}
+
+.introLeft {
+    padding-top: 45px;
+
+    @media screen and (max-width: 1199px) {
+        padding-top: 100px;
+    }
+    
+    @media screen and (max-width: 991px) {
+        padding-top: 25px;
+    }
+
+    h1 {
+        max-width: 400px;
+        font-size: 54px;
+        line-height: 59.4px;
+        margin-top: 11px;
+        margin-bottom: 18px;
+
+        @media screen and (max-width: 575px) {
+            font-size: 38px;
+            line-height: 50px;
+        }
+    }
+
+    p {
+        max-width: 394px;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 18px;
+
+        @media screen and (max-width: 575px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+.introRight {
+    position: absolute;
+    left: 57.5%;
+
+    @media screen and (max-width: 1199px) {
+        transform: scale(0.85);
+        left: 52%;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+}

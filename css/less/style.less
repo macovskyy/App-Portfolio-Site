@@ -1,0 +1,135 @@
+// out: "../style.css"
+// relativeUrls: true
+
+@import '1header.less';
+@import 'btn.less';
+@import 'command.less';
+@import '2intro.less';
+@import '3features.less';
+@import '4intro2.less';
+@import '5dark.less';
+@import '6price.less';
+@import '7review.less';
+@import '8downloadnow.less';
+@import '9faq.less';
+@import '10footer.less';
+
+body {
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    transition: .25s;
+    color: @secondary-color;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+	@media screen and (max-width: 1235px) {
+        max-width: 1080px;
+    }
+
+	@media screen and (max-width: 1199px) {
+		max-width: 960px;
+	}
+
+	@media screen and (max-width: 991px) {
+		max-width: 720px;
+	}
+
+	@media screen and (max-width: 767px) {
+		max-width: 540px;
+	}
+
+	@media screen and (max-width: 575px) {
+		max-width: 360px;
+	}
+
+	@media screen and (max-width: 380px) {
+		max-width: 300px;
+	}
+
+}
+
+.blue {
+	color: @blue;
+}
+
+.red {
+	color: @accent-color;
+}
+
+.yellow {
+	color: @yellow;
+}
+
+.pink {
+	color: @pink
+}
+
+.akwa {
+	color: @akwa;
+}
+
+.purple {
+	color: @purple;
+}
+
+.gray {
+	color: #666;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing:border-box;
+}
+
+a {
+	text-decoration:none; 
+	color:inherit; 
+	cursor:pointer;
+}
+
+button {
+	background-color:transparent; 
+	color:inherit; 
+	border-width:0; 
+	padding:0; 
+	cursor:pointer;
+}
+
+figure {
+	margin:0;
+}
+
+input::-moz-focus-inner {
+	border:0; 
+	padding:0; 
+	margin:0;
+}
+
+ul, ol, dd {
+	margin:0; 
+	padding:0; 
+	list-style:none;}
+
+h1, h2, h3, h4, h5, h6 {
+	margin:0; 
+	font-size:inherit; 
+	font-weight:inherit;
+}
+
+p {
+	margin:0;
+}
+
+cite {
+	font-style:normal;
+}
+
+fieldset {
+	border-width:0; padding:0; margin:0;
+}

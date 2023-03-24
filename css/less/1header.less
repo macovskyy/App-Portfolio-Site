@@ -1,0 +1,118 @@
+// main: 'style.less'
+@import 'command.less';
+
+header {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    transition: .35s;
+
+    img {
+        padding-left: 16px;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    transition: .35s;
+}
+
+.navItem {
+    margin-right: 32px;
+    list-style-type: none;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    transition: .35s;
+    
+    @media screen and (max-width: 991px) {
+        display: none;
+    }
+}
+
+.hamburger {
+    display: none;
+    transition: .35s;
+    margin-top: 2.5%;
+
+    @media screen and (max-width: 991px) {
+        display: block;
+        margin-right: 20px;
+    }
+}
+
+.hamburgerMenu {
+    display: none;
+    position: absolute;
+    padding: 30px 20px 30px 20px;
+    width: 100%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    align-items: center;
+    transition: .35s;
+
+    @media screen and (max-width:575px) {
+        max-width: 100%;
+        font-size: 12px;
+    }
+
+    @media screen and (max-width:340px) {
+        max-width: 100%;
+        margin-right: 5px;
+    }
+
+    .hamItem {
+        color: @primary-color;
+        text-decoration: none;
+        list-style-type: none;
+        margin-right: 10%;
+        margin-left: auto;
+        transition: .35s;
+
+        @media screen and (max-width:340px) {
+            font-size: 8px;
+            margin-right: 5px;
+            padding-left: 5px;
+        }
+    }
+
+    .ex img {
+        margin-top: 8%;
+        margin-right: auto;
+        height: 20px;
+        transition: .35s;
+
+        @media screen and (max-width:575px) {
+            height: 17px;
+            position: absolute;
+            right: 20px;
+            top: -8.5px;
+        }
+    }
+    
+}
+
+.active {
+    display: flex;
+    transition: .35s;
+}
+
+
+.navItem a{
+    text-decoration: none;
+    color: @font-nav-color;
+}
+
+.navItem a:hover {
+    color: @secondary-color;
+}
+
